@@ -17,9 +17,9 @@ fun totalFuel (mass : int) : int =
         if f > 0 then SOME f else NONE
     end
   in
-	(case (fuel mass)
-	    of SOME f => f + totalFuel f
-         | NONE => 0)
+    (case (fuel mass)
+      of SOME f => f + totalFuel f
+       | NONE => 0)
 end
 
 
